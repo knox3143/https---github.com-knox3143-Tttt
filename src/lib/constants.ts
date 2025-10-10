@@ -295,7 +295,7 @@ export const FOOTER_LINKS = {
         { href: SUPPORT_SERVER_LINK, label: 'Discord' },
     ],
     'Legal': [
-        { href: '#', label: 'Privacy Policy' },
-        { href: '#', label: 'Terms of Service' },
+        { href: '/privacy-policy', label: 'Privacy Policy' },
+        { href: '/terms-of-service', label: 'Terms of Service' },
     ]
 };
