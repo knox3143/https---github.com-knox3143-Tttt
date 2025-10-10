@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "bot-logo",
+      "description": "The official logo for Funky Bot",
+      "imageUrl": "https://cdn.discordapp.com/attachments/1382989662045474860/1426293467201536052/1000075928-removebg-preview.png",
+      "imageHint": "bot logo"
+    },
+    {
+      "id": "knox-avatar",
+      "description": "Avatar for Knox",
+      "imageUrl": "https://picsum.photos/seed/knox/200/200",
+      "imageHint": "male developer"
+    },
+    {
+      "id": "deepjyoti-avatar",
+      "description": "Avatar for Deepjyoti",
+      "imageUrl": "https://picsum.photos/seed/deepjyoti/200/200",
+      "imageHint": "male programmer"
+    }
+  ]
 }
