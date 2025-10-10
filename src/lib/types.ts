@@ -44,3 +44,23 @@ export type FaqItem = {
   question: string;
   answer: string;
 };
+
+export type PremiumTier = {
+  name: string;
+  price: string;
+  description: string;
+  features: string[];
+  isRecommended: boolean;
+  buttonText: string;
+  buttonVariant: 'default' | 'outline' | 'secondary' | 'ghost' | 'link' | 'destructive';
+};
+
+export type BlogPost = {
+  id: string;
+  title: string;
+  author: string;
+  date: string;
+  excerpt: string;
+  imageUrl: string;
+  category: string;
+};

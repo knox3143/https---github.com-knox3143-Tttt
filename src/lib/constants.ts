@@ -1,4 +1,4 @@
-import type { CommandCategory, Developer, FaqItem, Feature, NavLink, Stat } from './types';
+import type { CommandCategory, Developer, FaqItem, Feature, NavLink, Stat, PremiumTier, BlogPost } from './types';
 import {
   LucideIcon,
   Music,
@@ -26,6 +26,9 @@ import {
   Waypoints,
   Zap,
   ShieldCheck,
+  Crown,
+  Gem,
+  CheckCircle2,
 } from 'lucide-react';
 
 // Core Links
@@ -36,11 +39,11 @@ export const VOTE_LINK = "https://top.gg/bot/1281872745113587752/vote";
 // Navigation
 export const NAV_LINKS: NavLink[] = [
   { href: '/', label: 'Home' },
-  { href: '/commands', label: 'Commands' },
   { href: '/features', label: 'Features' },
+  { href: '/commands', label: 'Commands' },
+  { href: '/premium', label: 'Premium' },
+  { href: '/blog', label: 'Blog' },
   { href: '/support', label: 'Support' },
-  { href: '/developers', label: 'Developers' },
-  { href: '/vote', label: 'Vote' },
 ];
 
 // Home Page Stats
@@ -288,9 +291,10 @@ export const VOTE_REWARDS: { icon: LucideIcon, text: string }[] = [
 // Footer Links
 export const FOOTER_LINKS = {
     'Pages': [
-        { href: '/commands', label: 'Commands' },
         { href: '/features', label: 'Features' },
-        { href: '/support', label: 'Support' },
+        { href: '/commands', label: 'Commands' },
+        { href: '/premium', label: 'Premium' },
+        { href: '/blog', label: 'Blog' },
     ],
     'Community': [
         { href: '/developers', label: 'Developers' },
@@ -303,4 +307,92 @@ export const FOOTER_LINKS = {
     ]
 };
 
+// Premium Tiers
+export const PREMIUM_TIERS: PremiumTier[] = [
+    {
+        name: 'Free',
+        price: '$0/month',
+        description: 'The core Funky Music experience for everyone.',
+        features: [
+            'Standard Audio Quality',
+            'All Music Commands',
+            'Basic Audio Filters',
+            'Community Support',
+        ],
+        isRecommended: false,
+        buttonText: 'Current Plan',
+        buttonVariant: 'outline',
+    },
+    {
+        name: 'Premium',
+        price: '$4.99/month',
+        description: 'For serious music lovers and larger communities.',
+        features: [
+            'High-Quality Audio (256kbps)',
+            '24/7 Music Playback',
+            'All Audio Filters',
+            'Volume Control up to 200%',
+            'Persistent Queue',
+            'Priority Support',
+        ],
+        isRecommended: true,
+        buttonText: 'Upgrade to Premium',
+        buttonVariant: 'default',
+    },
+    {
+        name: 'Premium+',
+        price: '$9.99/month',
+        description: 'The ultimate experience for power users and multiple servers.',
+        features: [
+            'Lossless Audio Quality (320kbps+)',
+            'Everything in Premium',
+            'Premium on 3 Servers',
+            'Custom Bot Branding (soon)',
+            'Beta Feature Access',
+            'Exclusive Supporter Role',
+        ],
+        isRecommended: false,
+        buttonText: 'Get Premium+',
+        buttonVariant: 'outline',
+    },
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+    {
+        id: 'new-feature-ai-playlists',
+        title: 'New Feature Alert: AI-Powered Playlists!',
+        author: 'Knox',
+        date: '2024-07-20',
+        excerpt: 'We\'re thrilled to announce our latest and greatest feature: AI Playlist Generation! Just type a mood, and let Funky Music create the perfect queue for you.',
+        imageUrl: 'https://picsum.photos/seed/blog1/600/400',
+        category: 'Feature Updates'
+    },
+    {
+        id: 'v2-5-1-release-notes',
+        title: 'Funky Music v2.5.1 Release Notes',
+        author: 'Deepjyoti',
+        date: '2024-07-15',
+        excerpt: 'Our latest update brings a host of performance improvements, bug fixes, and a brand new "Karaoke" filter. See what\'s new!',
+        imageUrl: 'https://picsum.photos/seed/blog2/600/400',
+        category: 'Release Notes'
+    },
+    {
+        id: 'community-spotlight-july',
+        title: 'Community Spotlight: The Chill Zone',
+        author: 'Funky Team',
+        date: '2024-07-10',
+        excerpt: 'This month, we\'re featuring "The Chill Zone" server and how they use Funky Music to create the ultimate relaxed atmosphere for their members.',
+        imageUrl: 'https://picsum.photos/seed/blog3/600/400',
+        category: 'Community'
+    },
+     {
+        id: 'deep-dive-audio-filters',
+        title: 'A Deep Dive into Funky Music\'s Audio Filters',
+        author: 'Knox',
+        date: '2024-07-05',
+        excerpt: 'Ever wondered how our audio filters work? In this post, we explore the tech behind our most popular sound effects and how you can use them to perfection.',
+        imageUrl: 'https://picsum.photos/seed/blog4/600/400',
+        category: 'Tutorials'
+    }
+];
     
