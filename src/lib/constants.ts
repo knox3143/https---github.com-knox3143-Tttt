@@ -47,8 +47,8 @@ export const NAV_LINKS: NavLink[] = [
 
 // Home Page Stats
 export const STATS: Stat[] = [
-  { label: 'Total Servers', value: 1500, icon: Globe, suffix: '+' },
-  { label: 'Active Users', value: 250000, icon: Users, suffix: '+' },
+  { label: 'Total Servers', value: 750, icon: Globe, suffix: '+' },
+  { label: 'Active Users', value: 500000, icon: Users, suffix: '+' },
   { label: 'Uptime', value: 99.9, icon: ShieldCheck, suffix: '%' },
   { label: 'Songs Played', value: 1000000, icon: Music, suffix: '+' },
 ];
