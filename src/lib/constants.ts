@@ -1,4 +1,4 @@
-import type { CommandCategory, Developer, FaqItem, Feature, NavLink, Stat, PremiumTier, BlogPost } from './types';
+import type { CommandCategory, Developer, FaqItem, Feature, NavLink, Stat, PremiumTier } from './types';
 import {
   LucideIcon,
   Music,
@@ -42,7 +42,6 @@ export const NAV_LINKS: NavLink[] = [
   { href: '/features', label: 'Features' },
   { href: '/commands', label: 'Commands' },
   { href: '/premium', label: 'Premium' },
-  { href: '/blog', label: 'Blog' },
   { href: '/support', label: 'Support' },
 ];
 
@@ -294,7 +293,6 @@ export const FOOTER_LINKS = {
         { href: '/features', label: 'Features' },
         { href: '/commands', label: 'Commands' },
         { href: '/premium', label: 'Premium' },
-        { href: '/blog', label: 'Blog' },
     ],
     'Community': [
         { href: '/developers', label: 'Developers' },
@@ -355,44 +353,5 @@ export const PREMIUM_TIERS: PremiumTier[] = [
         buttonText: 'Get Premium+',
         buttonVariant: 'outline',
     },
-];
-
-export const BLOG_POSTS: BlogPost[] = [
-    {
-        id: 'new-feature-ai-playlists',
-        title: 'New Feature Alert: AI-Powered Playlists!',
-        author: 'Knox',
-        date: '2024-07-20',
-        excerpt: 'We\'re thrilled to announce our latest and greatest feature: AI Playlist Generation! Just type a mood, and let Funky Music create the perfect queue for you.',
-        imageUrl: 'https://picsum.photos/seed/blog1/600/400',
-        category: 'Feature Updates'
-    },
-    {
-        id: 'v2-5-1-release-notes',
-        title: 'Funky Music v2.5.1 Release Notes',
-        author: 'Deepjyoti',
-        date: '2024-07-15',
-        excerpt: 'Our latest update brings a host of performance improvements, bug fixes, and a brand new "Karaoke" filter. See what\'s new!',
-        imageUrl: 'https://picsum.photos/seed/blog2/600/400',
-        category: 'Release Notes'
-    },
-    {
-        id: 'community-spotlight-july',
-        title: 'Community Spotlight: The Chill Zone',
-        author: 'Funky Team',
-        date: '2024-07-10',
-        excerpt: 'This month, we\'re featuring "The Chill Zone" server and how they use Funky Music to create the ultimate relaxed atmosphere for their members.',
-        imageUrl: 'https://picsum.photos/seed/blog3/600/400',
-        category: 'Community'
-    },
-     {
-        id: 'deep-dive-audio-filters',
-        title: 'A Deep Dive into Funky Music\'s Audio Filters',
-        author: 'Knox',
-        date: '2024-07-05',
-        excerpt: 'Ever wondered how our audio filters work? In this post, we explore the tech behind our most popular sound effects and how you can use them to perfection.',
-        imageUrl: 'https://picsum.photos/seed/blog4/600/400',
-        category: 'Tutorials'
-    }
 ];
     

@@ -54,13 +54,3 @@ export type PremiumTier = {
   buttonText: string;
   buttonVariant: 'default' | 'outline' | 'secondary' | 'ghost' | 'link' | 'destructive';
 };
-
-export type BlogPost = {
-  id: string;
-  title: string;
-  author: string;
-  date: string;
-  excerpt: string;
-  imageUrl: string;
-  category: string;
-};
