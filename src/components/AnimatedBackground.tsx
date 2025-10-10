@@ -1,28 +1,47 @@
 'use client';
 
 import { MusicNote } from './MusicNote';
-import { useMemo } from 'react';
+import { useState, useEffect } from 'react';
+
+type Note = {
+  id: number;
+  style: {
+    width: string;
+    height: string;
+    left: string;
+    animationDuration: string;
+    animationDelay: string;
+    opacity: number;
+  };
+};
 
 export function AnimatedBackground() {
-  const notes = useMemo(() => Array.from({ length: 20 }).map((_, i) => {
-    const size = Math.random() * 2 + 1; // 1rem to 3rem
-    const duration = Math.random() * 10 + 10; // 10s to 20s
-    const delay = Math.random() * 10; // 0s to 10s
-    const left = Math.random() * 100;
-    const opacity = Math.random() * 0.15 + 0.05;
+  const [notes, setNotes] = useState<Note[]>([]);
 
-    return {
-      id: i,
-      style: {
-        width: `${size}rem`,
-        height: `${size}rem`,
-        left: `${left}%`,
-        animationDuration: `${duration}s`,
-        animationDelay: `${delay}s`,
-        opacity: opacity,
-      },
-    };
-  }), []);
+  useEffect(() => {
+    // This code now runs only on the client, after the initial render.
+    const generatedNotes = Array.from({ length: 20 }).map((_, i) => {
+      const size = Math.random() * 2 + 1; // 1rem to 3rem
+      const duration = Math.random() * 10 + 10; // 10s to 20s
+      const delay = Math.random() * 10; // 0s to 10s
+      const left = Math.random() * 100;
+      const opacity = Math.random() * 0.15 + 0.05;
+
+      return {
+        id: i,
+        style: {
+          width: `${size}rem`,
+          height: `${size}rem`,
+          left: `${left}%`,
+          animationDuration: `${duration}s`,
+          animationDelay: `${delay}s`,
+          opacity: opacity,
+        },
+      };
+    });
+    setNotes(generatedNotes);
+  }, []); // Empty dependency array ensures this runs only once on the client.
+
 
   return (
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
