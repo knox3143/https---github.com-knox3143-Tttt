@@ -54,7 +54,7 @@ export default function Home() {
         <section className="py-16 md:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {STATS.map((stat, index) => (
-              <Card key={stat.label} className="glassmorphic text-center" style={{ animationDelay: `${index * 100}ms` }}>
+              <Card key={stat.label} className="glassmorphic text-center hover:-translate-y-2 transition-transform" style={{ animationDelay: `${index * 100}ms` }}>
                 <CardHeader>
                   <CardTitle className="flex items-center justify-center gap-3 text-2xl">
                     <stat.icon className="h-8 w-8 text-primary" />
@@ -79,7 +79,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {FEATURES.slice(0, 3).map((feature) => (
-              <Card key={feature.title} className="glassmorphic text-left hover:border-primary/50 transition-colors duration-300">
+              <Card key={feature.title} className="glassmorphic text-left hover:-translate-y-2 transition-transform hover:border-primary/50">
                 <CardHeader>
                   <div className="bg-primary/10 border border-primary/20 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                     <feature.icon className="h-6 w-6 text-primary" />
