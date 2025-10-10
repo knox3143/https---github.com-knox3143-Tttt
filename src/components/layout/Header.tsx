@@ -7,13 +7,13 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BOT_INVITE_LINK, NAV_LINKS, SUPPORT_SERVER_LINK } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Bot, Menu, Music } from 'lucide-react';
 import { useState } from 'react';
 
 export function Header() {
   const pathname = usePathname();
-  const botLogo = PlaceHolderImages.find((img) => img.id === 'bot-logo');
+  const botLogo = PlaceHolderImages.find((img) => img.id === 'bot-logo-header');
   const [isSheetOpen, setSheetOpen] = useState(false);
 
   return (
@@ -68,6 +68,12 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetHeader className="sr-only">
+                <SheetTitle>Mobile Menu</SheetTitle>
+                <SheetDescription>
+                  Navigation links for Funky Bot website.
+                </SheetDescription>
+              </SheetHeader>
               <div className="flex flex-col h-full">
                 <div className="flex items-center mb-8">
                   <Link href="/" className="mr-6 flex items-center space-x-2" onClick={() => setSheetOpen(false)}>
