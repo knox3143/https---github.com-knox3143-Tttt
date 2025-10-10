@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col gap-4 col-span-1 md:col-span-1">
-            <h3 className="font-headline font-bold text-lg">Funky Bot</h3>
+            <h3 className="font-headline font-bold text-lg">Funky Music</h3>
             <p className="text-muted-foreground text-sm">Your Ultimate Discord Music Companion.</p>
             <p className="text-xs text-muted-foreground">Version 2.5.1</p>
           </div>
@@ -38,7 +38,7 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t border-border/40 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Funky Bot. Developed by Knox & Deepjyoti.
+            &copy; {currentYear} Funky Music. Developed by Knox & Deepjyoti.
           </p>
           <div className="flex gap-4">
             <Link href="#" className="text-muted-foreground hover:text-foreground">

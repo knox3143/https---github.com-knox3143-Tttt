@@ -53,7 +53,7 @@ export const FEATURES: Feature[] = [
     {
         icon: Waypoints,
         title: 'Multi-Platform Streaming',
-        description: 'Enjoy music from Spotify, YouTube, and SoundCloud without missing a beat. Funky Bot seamlessly integrates with your favorite platforms.',
+        description: 'Enjoy music from Spotify, YouTube, and SoundCloud without missing a beat. Funky Music seamlessly integrates with your favorite platforms.',
         benefit: 'Access a virtually unlimited library of songs from multiple sources in one place.'
     },
     {
@@ -71,13 +71,13 @@ export const FEATURES: Feature[] = [
     {
         icon: ListMusic,
         title: 'Powerful Playlist Management',
-        description: 'Create, save, and manage personal playlists directly within Discord. Import playlists from Spotify or export your custom Funky Bot playlists to share with friends.',
+        description: 'Create, save, and manage personal playlists directly within Discord. Import playlists from Spotify or export your custom Funky Music playlists to share with friends.',
         benefit: 'Your entire music library, curated by you, is always just a command away.'
     },
     {
         icon: Cpu,
         title: 'Guaranteed 24/7 Uptime',
-        description: 'Funky Bot boasts a 99.9% reliability guarantee. With auto-reconnect and persistent queues, the music never stops, even if you do.',
+        description: 'Funky Music boasts a 99.9% reliability guarantee. With auto-reconnect and persistent queues, the music never stops, even if you do.',
         benefit: 'Rely on a bot that’s always online and ready to play, ensuring your server’s party never ends unexpectedly.'
     },
     {
@@ -89,13 +89,13 @@ export const FEATURES: Feature[] = [
     {
         icon: MessageSquareHeart,
         title: 'Fun Social Commands',
-        description: 'Engage your community with over 16 interactive commands. From hugs and pats to roasts and bonks, Funky Bot adds a new layer of fun to your server.',
+        description: 'Engage your community with over 16 interactive commands. From hugs and pats to roasts and bonks, Funky Music adds a new layer of fun to your server.',
         benefit: 'Strengthen community bonds and create memorable moments with a suite of expressive social commands.'
     },
     {
         icon: Sparkles,
         title: 'Exclusive Premium Features',
-        description: 'Unlock the ultimate Funky Bot experience with Premium. Get access to 24/7 mode, priority support, enhanced audio quality, and more.',
+        description: 'Unlock the ultimate Funky Music experience with Premium. Get access to 24/7 mode, priority support, enhanced audio quality, and more.',
         benefit: 'Support the developers and gain access to powerful features that take your server to the next level.'
     }
 ];
@@ -177,7 +177,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
             { name: '+ignore', description: 'Makes the bot ignore a channel.', usage: '+ignore <channel>' },
             { name: '+prefix', description: 'Changes the bot\'s prefix for the server.', usage: '+prefix <new prefix>' },
             { name: '+premium', description: 'Shows your premium status.', usage: '+premium' },
-            { name: '+profile', description: 'Shows your Funky Bot user profile.', usage: '+profile' },
+            { name: '+profile', description: 'Shows your Funky Music user profile.', usage: '+profile' },
             { name: '+redeem', description: 'Redeems a premium code.', usage: '+redeem <code>' },
         ],
     },
@@ -238,7 +238,7 @@ export const DEVELOPERS: Developer[] = [
         discordUsername: 'knoxontopp',
         discordUserId: '1360105330130026496',
         avatarId: 'knox-avatar',
-        bio: 'As the founder and lead developer, Knox architected Funky Bot from the ground up. He oversees all development, ensuring the bot remains stable, scalable, and packed with cutting-edge features.'
+        bio: 'As the founder and lead developer, Knox architected Funky Music from the ground up. He oversees all development, ensuring the bot remains stable, scalable, and packed with cutting-edge features.'
     },
     {
         name: 'Deepjyoti',
@@ -246,23 +246,23 @@ export const DEVELOPERS: Developer[] = [
         discordUsername: 'deepjyoti.exe',
         discordUserId: '1064033717561081856',
         avatarId: 'deepjyoti-avatar',
-        bio: 'Deepjyoti focuses on enhancing the user experience and developing new commands. His work on the playlist and filter systems has been crucial to making Funky Bot a powerhouse of musical control.'
+        bio: 'Deepjyoti focuses on enhancing the user experience and developing new commands. His work on the playlist and filter systems has been crucial to making Funky Music a powerhouse of musical control.'
     }
 ];
 
 // FAQs
 export const FAQ_ITEMS: FaqItem[] = [
     {
-        question: 'How do I add Funky Bot to my Discord server?',
+        question: 'How do I add Funky Music to my Discord server?',
         answer: 'Simple! Just click on any "Add to Discord" or "Invite" button on this website. You will be prompted to select a server where you have "Manage Server" permissions. Authorize the bot, and it will join your server instantly.'
     },
     {
-        question: 'What is the default prefix for Funky Bot?',
+        question: 'What is the default prefix for Funky Music?',
         answer: 'The default prefix is `+`. You can use commands like `+play <song name>`. If you are an administrator, you can change the prefix for your server using the `+prefix <new prefix>` command.'
     },
     {
-        question: 'Is Funky Bot free to use?',
-        answer: 'Yes, the vast majority of Funky Bot\'s features are completely free! We offer an optional Premium subscription for users who want access to enhanced features like 24/7 mode, better audio quality, and more, which also helps support the bot\'s development and hosting costs.'
+        question: 'Is Funky Music free to use?',
+        answer: 'Yes, the vast majority of Funky Music\'s features are completely free! We offer an optional Premium subscription for users who want access to enhanced features like 24/7 mode, better audio quality, and more, which also helps support the bot\'s development and hosting costs.'
     },
     {
         question: 'The bot is in my channel but I can\'t hear any music. What should I do?',

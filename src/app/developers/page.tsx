@@ -9,8 +9,8 @@ import { MessageSquare } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Developers - Funky Bot',
-    description: 'Meet the talented team of developers behind Funky Bot. Learn about our mission and the people who make the music happen.',
+    title: 'Developers - Funky Music',
+    description: 'Meet the talented team of developers behind Funky Music. Learn about our mission and the people who make the music happen.',
 };
 
 export default function DevelopersPage() {
@@ -21,7 +21,7 @@ export default function DevelopersPage() {
                     Meet the Team
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mt-4">
-                    The passionate minds behind Funky Bot, dedicated to crafting the ultimate music experience on Discord.
+                    The passionate minds behind Funky Music, dedicated to crafting the ultimate music experience on Discord.
                 </p>
             </div>
 

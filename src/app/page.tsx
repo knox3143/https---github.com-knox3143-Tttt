@@ -21,7 +21,7 @@ export default function Home() {
             {botLogo && (
               <Image
                 src={botLogo.imageUrl}
-                alt="Funky Bot Logo"
+                alt="Funky Music Logo"
                 width={160}
                 height={160}
                 className="rounded-full object-cover float"
@@ -30,7 +30,7 @@ export default function Home() {
             )}
           </div>
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-4">
-            Funky Bot - Your Ultimate
+            Funky Music - Your Ultimate
             <br />
             <span className="text-gradient-primary">Discord Music Companion</span>
           </h1>
@@ -75,7 +75,7 @@ export default function Home() {
         <section className="py-16 md:py-24 text-center">
           <h2 className="font-headline text-3xl md:text-5xl font-bold mb-4">Powerful Features, Endless Fun</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
-            Funky Bot is packed with features to make your music experience seamless and enjoyable.
+            Funky Music is packed with features to make your music experience seamless and enjoyable.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {FEATURES.slice(0, 3).map((feature) => (
@@ -106,12 +106,12 @@ export default function Home() {
                 Ready to transform your server?
               </h2>
               <p className="text-lg text-primary-foreground/80">
-                Bring Funky Bot to your community today and never miss a beat.
+                Bring Funky Music to your community today and never miss a beat.
               </p>
             </div>
             <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 text-lg px-10 py-6 flex-shrink-0">
               <Link href={BOT_INVITE_LINK} target="_blank">
-                Invite Funky Bot Now <ArrowRight className="ml-2 h-5 w-5" />
+                Invite Funky Music Now <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>

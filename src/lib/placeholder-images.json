@@ -2,8 +2,14 @@
   "placeholderImages": [
     {
       "id": "bot-logo",
-      "description": "The official logo for Funky Bot",
-      "imageUrl": "https://picsum.photos/seed/bot-logo/160/160",
+      "description": "The official logo for Funky Music",
+      "imageUrl": "https://i.ibb.co/68qG5z9/logo.png",
+      "imageHint": "bot logo"
+    },
+    {
+      "id": "bot-logo-header",
+      "description": "The official logo for Funky Music in the header",
+      "imageUrl": "https://i.ibb.co/68qG5z9/logo.png",
       "imageHint": "bot logo"
     },
     {

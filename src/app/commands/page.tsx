@@ -2,8 +2,8 @@ import { CommandsClient } from './CommandsClient';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Commands - Funky Bot',
-    description: 'Explore the complete list of commands for Funky Bot. Find everything from music playback and filters to playlist management and fun interactions.',
+    title: 'Commands - Funky Music',
+    description: 'Explore the complete list of commands for Funky Music. Find everything from music playback and filters to playlist management and fun interactions.',
 };
 
 export default function CommandsPage() {

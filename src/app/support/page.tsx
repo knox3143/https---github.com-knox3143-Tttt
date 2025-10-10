@@ -8,8 +8,8 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Support - Funky Bot',
-    description: 'Get help and support for Funky Bot. Join our Discord server, find answers in the FAQ, or submit a bug report.',
+    title: 'Support - Funky Music',
+    description: 'Get help and support for Funky Music. Join our Discord server, find answers in the FAQ, or submit a bug report.',
 };
 
 
@@ -33,7 +33,7 @@ export default function SupportPage() {
                         <CardHeader>
                             <CardTitle className="text-2xl">Frequently Asked Questions</CardTitle>
                             <CardDescription>
-                                Find quick answers to common questions about Funky Bot.
+                                Find quick answers to common questions about Funky Music.
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
@@ -67,13 +67,13 @@ export default function SupportPage() {
                         </CardHeader>
                         <CardContent className="flex flex-col gap-3">
                             <Button variant="outline" asChild className="justify-start">
-                                <Link href="#"><Book className="mr-2 h-4 w-4" /> Full Documentation</Link>
+                                <Link href="/terms-of-service"><Book className="mr-2 h-4 w-4" /> Terms of Service</Link>
                             </Button>
                             <Button variant="outline" asChild className="justify-start">
                                 <Link href="/commands"><FileText className="mr-2 h-4 w-4" /> Commands List</Link>
                             </Button>
                              <Button variant="outline" asChild className="justify-start">
-                                <Link href="#"><Wrench className="mr-2 h-4 w-4" /> Troubleshooting Guide</Link>
+                                <Link href="/privacy-policy"><Wrench className="mr-2 h-4 w-4" /> Privacy Policy</Link>
                             </Button>
                         </CardContent>
                     </Card>

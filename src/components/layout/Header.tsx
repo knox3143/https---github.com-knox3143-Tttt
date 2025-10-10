@@ -24,7 +24,7 @@ export function Header() {
             {botLogo ? (
               <Image
                 src={botLogo.imageUrl}
-                alt="Funky Bot Logo"
+                alt="Funky Music Logo"
                 width={40}
                 height={40}
                 className="rounded-full"
@@ -32,7 +32,7 @@ export function Header() {
             ) : (
               <Music className="h-8 w-8" />
             )}
-            <span className="font-bold font-headline text-lg">Funky Bot</span>
+            <span className="font-bold font-headline text-lg">Funky Music</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             {NAV_LINKS.map((link) => (
@@ -68,10 +68,10 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <SheetHeader className="sr-only">
-                <SheetTitle>Mobile Menu</SheetTitle>
-                <SheetDescription>
-                  Navigation links for Funky Bot website.
+              <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Navigation links for Funky Music website.
                 </SheetDescription>
               </SheetHeader>
               <div className="flex flex-col h-full">
@@ -80,13 +80,13 @@ export function Header() {
                      {botLogo && (
                         <Image
                             src={botLogo.imageUrl}
-                            alt="Funky Bot Logo"
+                            alt="Funky Music Logo"
                             width={32}
                             height={32}
                             className="rounded-full"
                         />
                      )}
-                    <span className="font-bold font-headline">Funky Bot</span>
+                    <span className="font-bold font-headline">Funky Music</span>
                   </Link>
                 </div>
                 <nav className="flex flex-col gap-6 text-lg font-medium">

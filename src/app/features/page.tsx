@@ -3,8 +3,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Features - Funky Bot',
-    description: 'Discover the powerful features that make Funky Bot the ultimate music companion for your Discord server. From multi-platform support to advanced audio filters.',
+    title: 'Features - Funky Music',
+    description: 'Discover the powerful features that make Funky Music the ultimate music companion for your Discord server. From multi-platform support to advanced audio filters.',
 };
 
 export default function FeaturesPage() {
@@ -17,7 +17,7 @@ export default function FeaturesPage() {
                     <span className="text-gradient-primary">Limitless Possibilities</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mt-4">
-                    Funky Bot is engineered with a rich feature set to provide a truly premium and customizable music experience.
+                    Funky Music is engineered with a rich feature set to provide a truly premium and customizable music experience.
                 </p>
             </div>
 

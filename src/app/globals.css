@@ -80,7 +80,7 @@
 
 @layer utilities {
   .glassmorphic {
-    @apply border border-white/10 bg-zinc-800/10 backdrop-blur-lg;
+    @apply border border-white/10 bg-zinc-800/10 backdrop-blur-lg transition-all duration-300;
   }
   .text-gradient-primary {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
@@ -102,15 +102,24 @@
 
   .fade-in-up {
     animation: fadeIn 0.5s ease-out forwards;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   @keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-12px) rotate(2deg); }
     100% { transform: translateY(0px); }
   }
 
   .float {
-    animation: float 3s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 }

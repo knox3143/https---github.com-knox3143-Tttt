@@ -6,8 +6,8 @@ import { Check, Star, ThumbsUp } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Vote - Funky Bot',
-    description: 'Support Funky Bot by voting on Top.gg! Help us grow and unlock special rewards in the process.',
+    title: 'Vote - Funky Music',
+    description: 'Support Funky Music by voting on Top.gg! Help us grow and unlock special rewards in the process.',
 };
 
 export default function VotePage() {
@@ -15,7 +15,7 @@ export default function VotePage() {
         <div className="container py-12 md:py-20 fade-in-up">
             <div className="text-center mb-12 md:mb-20">
                 <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter">
-                   Support Funky Bot
+                   Support Funky Music
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mt-4">
                     Your vote helps us reach more servers and climb the ranks. As a thank you, you'll get some cool perks!

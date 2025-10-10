@@ -18,9 +18,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Funky Bot - Your Ultimate Discord Music Companion',
-  description: 'The official website for Funky Bot, a modern, feature-rich Discord music bot providing a premium music experience.',
-  keywords: ['Discord bot', 'music bot', 'Funky Bot', 'Discord music', 'Spotify bot'],
+  title: 'Funky Music - Your Ultimate Discord Music Companion',
+  description: 'The official website for Funky Music, a modern, feature-rich Discord music bot providing a premium music experience.',
+  keywords: ['Discord bot', 'music bot', 'Funky Music', 'Discord music', 'Spotify bot'],
 };
 
 export default function RootLayout({
