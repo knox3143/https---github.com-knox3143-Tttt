@@ -29,6 +29,7 @@ import {
   Crown,
   Gem,
   CheckCircle2,
+  Code,
 } from 'lucide-react';
 
 // Core Links
@@ -42,6 +43,7 @@ export const NAV_LINKS: NavLink[] = [
   { href: '/features', label: 'Features' },
   { href: '/commands', label: 'Commands' },
   { href: '/premium', label: 'Premium' },
+  { href: '/developers', label: 'Developers' },
   { href: '/support', label: 'Support' },
 ];
 
