@@ -1,5 +1,13 @@
 import type { CommandCategory, Developer, FaqItem, Feature, NavLink, Stat } from './types';
 import {
+  LucideIcon,
+  Music,
+  SlidersHorizontal,
+  ListMusic,
+  Settings,
+  PartyPopper,
+  Info,
+  Radio,
   BarChart,
   Bot,
   CirclePlay,
@@ -10,19 +18,14 @@ import {
   Globe,
   HeartHandshake,
   HeartPulse,
-  Info,
   Layers,
-  ListMusic,
   MessageSquareHeart,
-  Music,
-  Radio,
-  Settings,
-  ShieldCheck,
   Sparkles,
   Users,
   Vote,
   Waypoints,
   Zap,
+  ShieldCheck,
 } from 'lucide-react';
 
 // Core Links
@@ -104,7 +107,7 @@ export const FEATURES: Feature[] = [
 export const COMMAND_CATEGORIES: CommandCategory[] = [
     {
         name: 'Music',
-        icon: '🎵',
+        icon: Music,
         commands: [
             { name: '+autoplay', description: 'Toggles autoplay for the current queue.', usage: '+autoplay' },
             { name: '+clear', description: 'Clears the server music queue.', usage: '+clear' },
@@ -132,7 +135,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
     },
     {
         name: 'Filter',
-        icon: '🎛️',
+        icon: SlidersHorizontal,
         commands: [
             { name: '+8d', description: 'Applies an 8D audio effect.', usage: '+8d' },
             { name: '+bassboost', description: 'Boosts the bass of the song.', usage: '+bassboost <level>' },
@@ -153,7 +156,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
     },
     {
         name: 'Playlist',
-        icon: '📋',
+        icon: ListMusic,
         commands: [
             { name: '+pl-add', description: 'Adds a track to your playlist.', usage: '+pl-add <playlist name> <song>' },
             { name: '+pl-create', description: 'Creates a new playlist.', usage: '+pl-create <name>' },
@@ -169,7 +172,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
     },
     {
         name: 'Config',
-        icon: '⚙️',
+        icon: Settings,
         commands: [
             { name: '+247', description: 'Toggles 24/7 mode (premium).', usage: '+247' },
             { name: '+buy', description: 'Shows information on how to buy premium.', usage: '+buy' },
@@ -183,7 +186,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
     },
     {
         name: 'Fun',
-        icon: '🎉',
+        icon: PartyPopper,
         commands: [
             { name: '+adance', description: 'Anime dance!', usage: '+adance' },
             { name: '+blush', description: 'Blush at someone.', usage: '+blush' },
@@ -205,7 +208,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
     },
     {
         name: 'Information',
-        icon: 'ℹ️',
+        icon: Info,
         commands: [
             { name: '+help', description: 'Shows the help menu.', usage: '+help [command]' },
             { name: '+invite', description: 'Get the bot\'s invite link.', usage: '+invite' },
@@ -220,7 +223,7 @@ export const COMMAND_CATEGORIES: CommandCategory[] = [
     },
     {
         name: 'Spotify',
-        icon: '🎧',
+        icon: Radio,
         commands: [
             { name: '+spotifylogin', description: 'Log in to your Spotify account.', usage: '+spotifylogin' },
             { name: '+unlinkspotify', description: 'Unlink your Spotify account.', usage: '+unlinkspotify' },
@@ -299,3 +302,5 @@ export const FOOTER_LINKS = {
         { href: '/terms-of-service', label: 'Terms of Service' },
     ]
 };
+
+    

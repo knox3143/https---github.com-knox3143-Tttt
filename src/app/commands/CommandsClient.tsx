@@ -87,7 +87,7 @@ export function CommandsClient() {
           filteredCategories.map((category) => (
             <section key={category.name}>
               <h2 className="font-headline text-3xl font-bold mb-6 flex items-center gap-4">
-                <span className="text-2xl">{category.icon}</span>
+                <category.icon className="h-7 w-7 text-primary" />
                 {category.name}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

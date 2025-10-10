@@ -27,7 +27,7 @@ export type Command = {
 
 export type CommandCategory = {
   name: string;
-  icon: string;
+  icon: LucideIcon;
   commands: Command[];
 };
 
