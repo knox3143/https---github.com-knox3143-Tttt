@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "NODE_ENV=production node index.js",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "@genkit-ai/google-genai": "^1.20.0",
