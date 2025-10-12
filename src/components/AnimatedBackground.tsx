@@ -1,6 +1,6 @@
 'use client';
 
-import { MusicNote } from './MusicNote';
+import { MusicNote } from '@/components/MusicNote';
 import { useState, useEffect } from 'react';
 import { Disc, Music, Mic, Guitar } from 'lucide-react';
 
