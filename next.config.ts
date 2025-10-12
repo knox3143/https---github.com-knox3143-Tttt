@@ -1,7 +1,10 @@
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /*
+   * Use 'standalone' output to create a self-contained server folder.
+   * This is optimal for Docker and various other hosting platforms.
+   */
   output: 'standalone',
   typescript: {
     ignoreBuildErrors: true,

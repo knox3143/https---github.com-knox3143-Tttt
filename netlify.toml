@@ -1,0 +1,16 @@
+# Netlify configuration file
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[dev]
+  command = "next dev"
+  port = 3000
+  publish = ".next"
+  targetPort = 3000
+  autoLaunch = true
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
