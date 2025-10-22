@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FOOTER_LINKS } from '@/lib/constants';
+import { FOOTER_LINKS, SUPPORT_SERVER_LINK, VOTE_LINK } from '@/lib/constants';
 import { Twitter, Disc, Rss } from 'lucide-react';
 
 export function Footer() {
@@ -41,13 +41,13 @@ export function Footer() {
             &copy; {currentYear} Funky Music. Developed by Knox & Deepjyoti.
           </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link href="https://x.com" target="_blank" className="text-muted-foreground hover:text-foreground" rel="noopener noreferrer">
               <Twitter className="h-5 w-5" />
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link href={SUPPORT_SERVER_LINK} target="_blank" className="text-muted-foreground hover:text-foreground" rel="noopener noreferrer">
               <Disc className="h-5 w-5" />
             </Link>
-             <Link href="#" className="text-muted-foreground hover:text-foreground">
+             <Link href={VOTE_LINK} target="_blank" className="text-muted-foreground hover:text-foreground" rel="noopener noreferrer">
               <Rss className="h-5 w-5" />
             </Link>
           </div>

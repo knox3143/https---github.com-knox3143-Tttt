@@ -6,6 +6,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import { BackToTopButton } from '@/components/layout/BackToTopButton';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,9 +19,35 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Funky Music - Your Ultimate Discord Music Companion',
-  description: 'The official website for Funky Music, a modern, feature-rich Discord music bot providing a premium music experience.',
-  keywords: ['Discord bot', 'music bot', 'Funky Music', 'Discord music', 'Spotify bot'],
+  title: {
+    default: 'Funky Music – Discord Music Bot',
+    template: '%s | Funky Music',
+  },
+  description:
+    'Funky Music is a modern, feature-rich Discord music bot with high-quality audio, playlists, filters, and 24/7 playback.',
+  keywords: [
+    'Discord bot',
+    'music bot',
+    'Funky Music',
+    'Discord music',
+    'Spotify bot',
+    'YouTube music',
+  ],
+  openGraph: {
+    title: 'Funky Music – Discord Music Bot',
+    description:
+      'High-quality audio, playlists, filters, and 24/7 playback for your Discord server.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://funkymusic.app',
+    siteName: 'Funky Music',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Funky Music – Discord Music Bot',
+    description:
+      'High-quality audio, playlists, filters, and 24/7 playback for your Discord server.',
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',
@@ -37,11 +64,13 @@ export default function RootLayout({
           spaceGrotesk.variable
         )}
       >
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <Toaster />
-        <BackToTopButton />
+        <ThemeProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <Toaster />
+          <BackToTopButton />
+        </ThemeProvider>
       </body>
     </html>
   );
