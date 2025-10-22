@@ -35,13 +35,13 @@ export function BackToTopButton() {
     <Button
       size="icon"
       className={cn(
-        "fixed bottom-4 right-4 rounded-full shadow-lg transition-opacity duration-300 z-50 button-gradient",
-        isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+        "fixed bottom-6 right-6 rounded-full shadow-2xl transition-all duration-500 z-50 button-gradient hover:scale-110 hover:shadow-primary/25 group",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       )}
       onClick={scrollToTop}
       aria-label="Go to top"
     >
-      <ArrowUp className="h-5 w-5" />
+      <ArrowUp className="h-5 w-5 group-hover:-translate-y-1 transition-transform duration-300" />
     </Button>
   );
 }
