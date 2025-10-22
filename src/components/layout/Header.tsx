@@ -40,22 +40,28 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'transition-colors hover:text-foreground/80',
-                  pathname === link.href ? 'text-foreground' : 'text-foreground/60'
+                  'relative transition-all duration-300 hover:text-foreground hover:scale-105 group',
+                  pathname === link.href 
+                    ? 'text-foreground font-semibold' 
+                    : 'text-foreground/70 hover:text-foreground'
                 )}
               >
                 {link.label}
+                <span className={cn(
+                  'absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-accent transition-all duration-300 group-hover:w-full',
+                  pathname === link.href ? 'w-full' : ''
+                )} />
               </Link>
             ))}
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex">
+          <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex hover:bg-primary/10 transition-all duration-300 hover:scale-105">
             <Link href={SUPPORT_SERVER_LINK} target="_blank">
               Join Support
             </Link>
           </Button>
-          <Button size="sm" asChild className="button-gradient hidden md:inline-flex">
+          <Button size="sm" asChild className="button-gradient button-glow hidden md:inline-flex">
             <Link href={BOT_INVITE_LINK} target="_blank">
               <Bot className="mr-2 h-4 w-4" /> Add Bot
             </Link>
