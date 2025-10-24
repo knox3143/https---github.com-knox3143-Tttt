@@ -255,8 +255,17 @@ export const DEVELOPERS: Developer[] = [
         discordUserId: '1064033717561081856',
         avatarId: 'deepjyoti-avatar',
         bio: 'Deepjyoti focuses on enhancing the user experience and developing new commands. His work on the playlist and filter systems has been crucial to making Funky Music a powerhouse of musical control.'
+    },
+    {
+        name: 'Zayn',
+        role: 'Admin & Manager',
+        discordUsername: 'dreamyduskkk',
+        discordUserId: '897826707011145748',
+        avatarId: 'zayn-avatar',
+        bio: 'Zayn oversees community management and server administration, ensuring smooth operations and maintaining a welcoming environment for all Funky Music users across Discord servers.'
     }
 ];
+
 
 // FAQs
 export const FAQ_ITEMS: FaqItem[] = [
