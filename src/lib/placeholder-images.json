@@ -15,14 +15,20 @@
     {
       "id": "knox-avatar",
       "description": "Avatar for Knox",
-      "imageUrl": "https://cdn.discordapp.com/attachments/1382989662045474860/1426330527807574026/IMG_20250612_055928_244.webp?ex=68ead551&is=68e983d1&hm=41d8bbc7517970c5255bb15e1545e5d58fd24d0aa03e3d1099e857b35791db56&",
+      "imageUrl": "https://cdn.discordapp.com/avatars/1360105330130026496/47dfd152f396adc32d22f58abd0f4213.png?size=1024e1545e5d58fd24d0aa03e3d1099e857b35791db56&",
       "imageHint": "male developer"
     },
     {
       "id": "deepjyoti-avatar",
       "description": "Avatar for Deepjyoti",
-      "imageUrl": "https://picsum.photos/seed/deepjyoti/200/200",
+      "imageUrl": "https://cdn.discordapp.com/avatars/1064033717561081856/e82e4911df62c47917eb28d55dfd9f09.png?size=1024",
       "imageHint": "male programmer"
+    },
+    {
+      "id": "zayn-avatar",
+      "description": "Avatar for Zayn",
+      "imageUrl": "https://cdn.discordapp.com/attachments/1424531120783098039/1431235099877183588/IMG_3799.jpg?ex=68fcad0e&is=68fb5b8e&hm=c14438764bf667680875f70d475be39137f57c796336e34cda1d7a2d13abc597&",
+      "imageHint": "admin manager"
     }
   ]
 }
