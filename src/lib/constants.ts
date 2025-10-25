@@ -262,7 +262,7 @@ export const DEVELOPERS: Developer[] = [
         discordUsername: 'dreamyduskkk',
         discordUserId: '897826707011145748',
         avatarId: 'zayn-avatar',
-        bio: 'Zayn oversees community management and server administration, ensuring smooth operations and maintaining a welcoming environment for all Funky Music users across Discord servers.'
+        bio: 'Zayn The Co-owner & Admin of Funky acts as both a technical manager and a community liaison. Their work includes assisting in bot updates, debugging playback or command issues, managing hosting environments, and ensuring Funky maintains.'
     }
 ];
 
