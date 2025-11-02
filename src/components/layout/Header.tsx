@@ -4,17 +4,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BOT_INVITE_LINK, NAV_LINKS, SUPPORT_SERVER_LINK } from '@/lib/constants';
+import { BOT_INVITE_LINK, NAV_LINKS, SUPPORT_SERVER_LINK, VOTE_LINK } from '@/lib/constants';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import { Bot, Menu, Music } from 'lucide-react';
-import { useState } from 'react';
+import { Bot, Menu, Moon, Sun, Music } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 
 export function Header() {
   const pathname = usePathname();
   const botLogo = PlaceHolderImages.find((img) => img.id === 'bot-logo-header');
   const [isSheetOpen, setSheetOpen] = useState(false);
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -47,9 +52,30 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href={VOTE_LINK}
+              target="_blank"
+              className={cn('transition-colors hover:text-foreground/80 text-foreground/60')}
+            >
+              Vote
+            </Link>
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
+          {mounted && (
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Toggle theme"
+              onClick={() => setTheme((resolvedTheme === 'dark' ? 'light' : 'dark'))}
+            >
+              {resolvedTheme === 'dark' ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
+            </Button>
+          )}
           <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex">
             <Link href={SUPPORT_SERVER_LINK} target="_blank">
               Join Support
@@ -105,6 +131,15 @@ export function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-4">
+                    {mounted && (
+                      <Button
+                        variant="outline"
+                        onClick={() => setTheme((resolvedTheme === 'dark' ? 'light' : 'dark'))}
+                        className="w-full"
+                      >
+                        {resolvedTheme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+                      </Button>
+                    )}
                     <Button asChild className="w-full button-gradient">
                         <Link href={BOT_INVITE_LINK} target="_blank">
                             <Bot className="mr-2 h-4 w-4" /> Add Bot
