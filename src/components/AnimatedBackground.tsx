@@ -24,12 +24,12 @@ export function AnimatedBackground() {
 
   useEffect(() => {
     // This code now runs only on the client, after the initial render.
-    const generatedNotes = Array.from({ length: 25 }).map((_, i) => {
-      const size = Math.random() * 2.5 + 1; // 1rem to 3.5rem
-      const duration = Math.random() * 15 + 10; // 10s to 25s
-      const delay = Math.random() * 15; // 0s to 15s
+    const generatedNotes = Array.from({ length: 35 }).map((_, i) => {
+      const size = Math.random() * 3 + 0.8; // 0.8rem to 3.8rem
+      const duration = Math.random() * 20 + 15; // 15s to 35s
+      const delay = Math.random() * 20; // 0s to 20s
       const left = Math.random() * 100;
-      const opacity = Math.random() * 0.2 + 0.05; // More variance in opacity
+      const opacity = Math.random() * 0.3 + 0.03; // More variance in opacity
       const Icon = ICONS[Math.floor(Math.random() * ICONS.length)];
 
       return {
@@ -53,22 +53,45 @@ export function AnimatedBackground() {
     <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
       <style jsx>{`
         @keyframes drift {
-          from {
-            transform: translateY(100vh) rotate(0deg) scale(0.8);
+          0% {
+            transform: translateY(100vh) rotate(0deg) scale(0.6);
+            opacity: 0;
+          }
+          10% {
+            opacity: var(--note-opacity);
+          }
+          25% {
+            transform: translateY(75vh) translateX(3vw) rotate(90deg) scale(1);
           }
           50% {
-             transform: translateX(5vw) rotate(180deg) scale(1.2);
+            transform: translateY(50vh) translateX(-2vw) rotate(180deg) scale(1.2);
           }
-          to {
-            transform: translateY(-100px) translateX(-5vw) rotate(360deg) scale(0.8);
+          75% {
+            transform: translateY(25vh) translateX(4vw) rotate(270deg) scale(0.9);
+          }
+          90% {
+            opacity: var(--note-opacity);
+          }
+          100% {
+            transform: translateY(-10vh) translateX(-3vw) rotate(360deg) scale(0.4);
+            opacity: 0;
+          }
+        }
+        @keyframes pulse {
+          0%, 100% {
+            filter: brightness(1) hue-rotate(0deg);
+          }
+          50% {
+            filter: brightness(1.3) hue-rotate(30deg);
           }
         }
         .note {
           position: absolute;
-          bottom: -150px; /* Start further down */
-          animation: drift linear infinite;
-          will-change: transform;
+          bottom: -150px;
+          animation: drift linear infinite, pulse 4s ease-in-out infinite;
+          will-change: transform, opacity, filter;
           color: hsl(var(--primary));
+          --note-opacity: ${Math.random() * 0.4 + 0.1};
         }
       `}</style>
       {notes.map((note) => (
