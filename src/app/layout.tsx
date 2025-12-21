@@ -6,6 +6,7 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 import { BackToTopButton } from '@/components/layout/BackToTopButton';
+import { FloatingCTA } from '@/components/FloatingCTA';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -42,6 +43,7 @@ export default function RootLayout({
         <Footer />
         <Toaster />
         <BackToTopButton />
+        <FloatingCTA />
       </body>
     </html>
   );
